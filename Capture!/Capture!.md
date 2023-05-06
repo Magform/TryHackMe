@@ -8,7 +8,9 @@ The first thing to do is usually a scan with nmap for any open ports, so I ran t
 
     nmap -sV -sC -A -p- [machine_IP]
 
-And I found that only port 80 appears to be open. I then tried to visit the website and found a login page. I then ran a gobuster scan to locate any interesting subdomains with the command:
+And I found that only port 80 appears to be open.   
+I then tried to visit the website and found a login page.  
+Next to this I ran a gobuster scan to locate any interesting subdomains with the command:
 
     gobuster dir -k -u http://[machine_IP] -w /usr/share/dirb/wordlists/small.txt
 
